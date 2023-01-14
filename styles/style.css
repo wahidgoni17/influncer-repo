@@ -119,10 +119,6 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.thumbnail {
-  width: 404px;
-  height: 270px;
-}
 .end-title {
   color: #0a0826;
   font-weight: 700;
@@ -154,4 +150,86 @@ footer{
 }
 .footer-image{
   color: #ffffff;
+}
+
+@media screen and (max-width: 668px){
+  /* -------------
+    header responsive
+  ----------------- */
+  .head-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head-title {
+    font-weight: 700;
+    font-size: 28px;
+    padding-left: 0px;
+    text-align: center;
+    color: #3a3a3a;
+    padding-top: 8px;
+  }
+  .menu-bar{
+    display: none;
+  }
+  /* --------------
+  banner responsive
+  ----------------- */
+  .banner-container{
+    flex-direction: column-reverse;
+  }
+  .banner-content{
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+  .banner-title{
+    font-weight: 700;
+  font-size: 28px;
+  color: #3a3a3a;
+  padding-left: 0px;
+  }
+  .camera{
+    width: 100%;
+    padding-left: 60px;
+  }
+  /* --------------
+  logos responsive
+  ----------------- */
+  .logos-container{
+    width: 100%;
+  }
+  .logos{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product-head{
+    font-size: 22px;
+    padding-top: 180px;
+  }
+  .products{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+  .see-more{
+    text-align: end;
+    padding-right: 0px;
+  }
+  /* --------------
+    end responsive
+  ----------------- */
+  .end-container{
+    width: 100%;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .thumbnail{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
 }
